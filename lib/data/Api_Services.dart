@@ -8,7 +8,7 @@ import 'package:injectable/injectable.dart';
 class ApiServices{
   Dio dio = Dio();
   Future<Response> get()async{
-     var response=await   dio.get('https://dummyjson.com/products');
+     var response=await dio.get("https://dummyjson.com/products");
    return response;
 
 
